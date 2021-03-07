@@ -17,4 +17,4 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPAso your job can access it
-      - run: docker run hello-world
+      - run: docker run ${{ secrets.DOCKERHUB_USERNAME}}/briana-client:main
